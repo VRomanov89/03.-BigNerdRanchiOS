@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		633330301D64D9690079A2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333302F1D64D9690079A2CA /* AppDelegate.swift */; };
-		633330321D64D9690079A2CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633330311D64D9690079A2CA /* ViewController.swift */; };
 		633330351D64D9690079A2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633330331D64D9690079A2CA /* Main.storyboard */; };
 		633330371D64D9690079A2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633330361D64D9690079A2CA /* Assets.xcassets */; };
 		6333303A1D64D9690079A2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633330381D64D9690079A2CA /* LaunchScreen.storyboard */; };
+		63720FDE1D66231A00671E7A /* CelciusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720FDD1D66231A00671E7A /* CelciusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6333302C1D64D9690079A2CA /* DegreesConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DegreesConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6333302F1D64D9690079A2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		633330311D64D9690079A2CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		633330341D64D9690079A2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		633330361D64D9690079A2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		633330391D64D9690079A2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6333303B1D64D9690079A2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63720FDD1D66231A00671E7A /* CelciusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelciusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				6333302F1D64D9690079A2CA /* AppDelegate.swift */,
-				633330311D64D9690079A2CA /* ViewController.swift */,
 				633330331D64D9690079A2CA /* Main.storyboard */,
 				633330361D64D9690079A2CA /* Assets.xcassets */,
 				633330381D64D9690079A2CA /* LaunchScreen.storyboard */,
 				6333303B1D64D9690079A2CA /* Info.plist */,
+				63720FDD1D66231A00671E7A /* CelciusViewController.swift */,
 			);
 			path = DegreesConverter;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633330321D64D9690079A2CA /* ViewController.swift in Sources */,
 				633330301D64D9690079A2CA /* AppDelegate.swift in Sources */,
+				63720FDE1D66231A00671E7A /* CelciusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +288,7 @@
 				633330401D64D9690079A2CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
