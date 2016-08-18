@@ -13,6 +13,7 @@
 		6333303A1D64D9690079A2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633330381D64D9690079A2CA /* LaunchScreen.storyboard */; };
 		63720FDE1D66231A00671E7A /* CelciusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720FDD1D66231A00671E7A /* CelciusViewController.swift */; };
 		63720FE01D66300100671E7A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63720FDF1D66300100671E7A /* MapKit.framework */; };
+		63720FEE1D6634A900671E7A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63720FED1D6634A900671E7A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6333303B1D64D9690079A2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63720FDD1D66231A00671E7A /* CelciusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelciusViewController.swift; sourceTree = "<group>"; };
 		63720FDF1D66300100671E7A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		63720FED1D6634A900671E7A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				633330381D64D9690079A2CA /* LaunchScreen.storyboard */,
 				6333303B1D64D9690079A2CA /* Info.plist */,
 				63720FDD1D66231A00671E7A /* CelciusViewController.swift */,
+				63720FED1D6634A900671E7A /* MapViewController.swift */,
 			);
 			path = DegreesConverter;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				633330301D64D9690079A2CA /* AppDelegate.swift in Sources */,
+				63720FEE1D6634A900671E7A /* MapViewController.swift in Sources */,
 				63720FDE1D66231A00671E7A /* CelciusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
