@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CelciusViewController: UIViewController {
+class CelciusViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var celciusField: UITextField!
     @IBOutlet weak var fahrenheitField: UILabel!
     @IBAction func celciusFieldChanged(sender: AnyObject) {
         if !(celciusField.text?.isEmpty)! {
         if let text = celciusField.text {
-            print("\(text)")
+            //print("\(text)")
             if let celciusValue = Double(text) {
                 let val = convertCelciusToFahrenheit(celciusValue)
                 fahrenheitField.text = numberFormatter.stringFromNumber(val)
@@ -27,6 +27,16 @@ class CelciusViewController: UIViewController {
     }
     @IBAction func dismissKeyboard(sender: AnyObject) {
         celciusField.resignFirstResponder()
+    }
+    
+    func textField(celciusField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let existingTextHasDecimalSeparator = celciusField.text?.rangeOfString(".")
+        let replacementTextHasDecimalSeparator = string.rangeOfString(".")
+        if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
+            return false
+        } else {
+            return true
+        }
     }
     
     let numberFormatter: NSNumberFormatter = {
