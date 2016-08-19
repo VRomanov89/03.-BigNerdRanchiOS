@@ -14,6 +14,7 @@
 		6372102C1D665CFD00671E7A /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372102B1D665CFD00671E7A /* ItemsViewController.swift */; };
 		6372102E1D665D7A00671E7A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372102D1D665D7A00671E7A /* Item.swift */; };
 		637210301D665FFD00671E7A /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372102F1D665FFD00671E7A /* ItemStore.swift */; };
+		637210321D67943900671E7A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637210311D67943900671E7A /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6372102B1D665CFD00671E7A /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		6372102D1D665D7A00671E7A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6372102F1D665FFD00671E7A /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		637210311D67943900671E7A /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				6372102B1D665CFD00671E7A /* ItemsViewController.swift */,
 				6372102D1D665D7A00671E7A /* Item.swift */,
 				6372102F1D665FFD00671E7A /* ItemStore.swift */,
+				637210311D67943900671E7A /* ItemCell.swift */,
 			);
 			path = "HomeBNR App";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				6372102E1D665D7A00671E7A /* Item.swift in Sources */,
 				637210301D665FFD00671E7A /* ItemStore.swift in Sources */,
 				6372101A1D665C5B00671E7A /* AppDelegate.swift in Sources */,
+				637210321D67943900671E7A /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
