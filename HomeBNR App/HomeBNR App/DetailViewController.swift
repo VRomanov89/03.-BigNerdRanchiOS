@@ -13,12 +13,25 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var serialTextField: UITextField!
     @IBOutlet weak var valueTextField: UITextField!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     @IBAction func backgroundTapped(sender: AnyObject) {
         view.endEditing(true)
     }
 
+    @IBAction func takePicture(sender: UIBarButtonItem) {
+        let imagePicker = UIImagePickerController()
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            imagePicker.sourceType = .Camera
+        } else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
+    }
     
-    var item: Item!
+    var item: Item! {
+        didSet {
+            navigationItem.title = item.name
+        }
+    }
     
     let numberFormatter: NSNumberFormatter = {
         let formatter = NSNumberFormatter()

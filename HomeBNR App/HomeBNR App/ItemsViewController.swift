@@ -20,6 +20,7 @@ class ItemsViewController: UITableViewController {
         }
     }
     
+    /*
     @IBAction func toggleEditingMode(sender: AnyObject) {
         if editing {
             sender.setTitle("Edit", forState: .Normal)
@@ -28,6 +29,11 @@ class ItemsViewController: UITableViewController {
             sender.setTitle("Done", forState: .Normal)
             setEditing(true, animated: true)
         }
+    } */
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        navigationItem.leftBarButtonItem = editButtonItem()
     }
     
     
@@ -73,11 +79,11 @@ class ItemsViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        /*let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableViewAutomaticDimension */
         tableView.estimatedRowHeight = 65
     }
     
@@ -87,6 +93,7 @@ class ItemsViewController: UITableViewController {
                 let item = itemStore.allItems[row]
                 let detailViewController = segue.destinationViewController as! DetailViewController
                 detailViewController.item = item
+                //detailViewController.title = item.name
             }
         }
     }
